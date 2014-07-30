@@ -2,6 +2,12 @@ extends layout
 
 block content
 	h1 Hello Boulder!
+	p Total:
+	p#total 0
+	form#gettotal(method='post' action='/total')
+		input#nbrinput(type='text' name='number' placeholder='Enter number here')
+		input(type='submit' name='submit' value='Get Total')
+	p
 	a#random(href='#') Get random numbers
 	ul#numbers Numbers
 block scripts
