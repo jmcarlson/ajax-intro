@@ -8,6 +8,13 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
+app.get('/numbers', function(req, res) {
+	res.send([
+		Math.random(),
+		Math.random(),
+		Math.random()
+	]);
+})
 
 var server = app.listen(3000, function() {
 	console.log('Express server listening on port ' + server.address().port);
