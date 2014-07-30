@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "4.x",
+    "body-parser": "1.x",
+    "nodemon": "~1.2.1",
+    "jade": "~1.5.0"
+  }
+}
